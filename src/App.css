@@ -1,38 +1,94 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Aladin&family=Alfa+Slab+One&family=Bree+Serif&family=Poppins:wght@600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: rgb(238, 217, 217); */
+}
+
+.app-title{
+  font-family: 'Aladin', cursive;
+  font-size: xx-large;
+  font-weight: 500;
+  font-style: initial;
   text-align: center;
+  padding: 20px 0 10px 0 ;
+}
+.txt-btn{
+  background-color: cadetblue;
+  color: black;
+}
+.welcome{
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  justify-content: center;
+  padding: 50px;
+  color: brown;
+  font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.board{
+  color: coral;
+  font-family: 'Aladin', cursive;
+}
+.prof-pic{
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.user-container{
+  border: 1px solid  black; 
+  /* box-shadow: 3px 0px 18px 10px rgba(117,171,209,0.44); */
+  background: rgba( 160, 234, 242, 0.15 );
+  border-radius: 15px;
+  margin: 15px;
+  padding: 10px;
+  max-width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.id-name{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.user{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.adduser, .edituser{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  margin-top: 10px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.userdetail{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.userdetails-container{
+  border: 1px solid  black; 
+  background: rgba( 160, 234, 242, 0.15 );
+  border-radius: 15px;
+  margin: 10px;
+  padding: 10px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p{
+  padding: 4px;
+  color:indigo;
 }
